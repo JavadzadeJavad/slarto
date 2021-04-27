@@ -69,22 +69,22 @@ $('.slider-nav').slick({
 
 	//Скролл до выбранного элемента при клике в шапке страницы
 	$('.scrollTo-about').click(function(){
-		$("html, body").animate({ scrollTop: $('#about').offset().top-141}, 1000);
+		$("html, body").animate({ scrollTop: $('#about').offset().top-100}, 1000);
 		$('#popup-menu-toggle').prop("checked", false);
 	});
 
 	$('.scrollTo-service').click(function(){
-		$("html, body").animate({ scrollTop: $('#service').offset().top-141}, 1000);
+		$("html, body").animate({ scrollTop: $('#service').offset().top-100}, 1000);
 		$('#popup-menu-toggle').prop("checked", false);
 	});
 
 	$('.scrollTo-price').click(function(){
-		$("html, body").animate({ scrollTop: $('#price').offset().top-141}, 1000);
+		$("html, body").animate({ scrollTop: $('#price').offset().top-100}, 1000);
 		$('#popup-menu-toggle').prop("checked", false);
 	});
 
 	$('.scrollTo-portfolio').click(function(){
-		$("html, body").animate({ scrollTop: $('#portfolio').offset().top-141}, 1000);
+		$("html, body").animate({ scrollTop: $('#portfolio').offset().top-100}, 1000);
 		$('#popup-menu-toggle').prop("checked", false);
 	});
 
