@@ -102,6 +102,19 @@ ul{
 	padding: 15px;
 }
 
+
+.scroll-down-mouse{
+	width: 100px;
+	
+	bottom: -47px;
+    position: absolute;
+    left: 50%;
+  	transform: translate(-50%, -50%);
+}
+.scroll-down-mouse img{
+	width: 100%;
+}
+
 /* __________________Выпадающий список меню_____________ */
 
 .popup-menu-container .popup-menu-content {
