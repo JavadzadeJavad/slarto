@@ -17,6 +17,49 @@ $(document).ready(function() {
 	});
 
 	//Скролл до выбранного элемента при клике в шапке страницы
+
+	$('.header-menu .logo').click(function(){
+		$("html, body").animate({ scrollTop: $('body').offset().top}, 1000);
+	});
+
+	$(window).scroll(function(){
+		var hT = $('.navbar').offset().top
+
+		if($('#about').offset().top-100-hT>5){
+			$(".header-menu li").removeClass('active');
+		}
+		if($('#about').offset().top-100-hT<5){
+			$(".header-menu li").removeClass('active');
+			$(".scrollTo-about").addClass("active");
+		}
+		if($('#service').offset().top-100-hT<5){
+			$(".header-menu li").removeClass('active');
+			$(".scrollTo-service").addClass("active");
+		}
+		if($('#price').offset().top-100-hT<5){
+			$(".header-menu li").removeClass('active');
+			$(".scrollTo-price").addClass("active");
+		}
+		if($('#portfolio').offset().top-100-hT<5){
+			$(".header-menu li").removeClass('active');
+			$(".scrollTo-portfolio").addClass("active");
+		}
+		if($(window).scrollTop()+$(window).height()>=$(document).height()){
+    		$(".header-menu li").removeClass('active');
+			$(".scrollTo-footer").addClass("active");
+		}
+	});
+	$(".header-menu li").click(function() {
+		$(".header-menu li").removeClass('active');
+		$(this).addClass("active");
+	});
+
+	$('.scroll-down-mouse').click(function(){
+		$(".header-menu li").removeClass('active');
+		$(".scrollTo-about").addClass("active");
+	});
+
+
 	$('.scrollTo-about').click(function(){
 		$("html, body").animate({ scrollTop: $('#about').offset().top-100}, 1000);
 		$('#popup-menu-toggle').prop("checked", false);
@@ -47,10 +90,6 @@ $(document).ready(function() {
 	});
 
 
-	$(".header-menu li").click(function() {
-		$(".header-menu li").removeClass('active');
-		$(this).addClass("active");
-	});
 
 	//При ширине экрана <500px, при клике в списке школ на элемент, показать соответствующюю школу
 	$('.schools-list .develp-intreface').click(function(){
