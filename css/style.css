@@ -44,7 +44,9 @@ body{
 	background-position: top center;*/
 	background: #2e2460; 
     /*background: linear-gradient(to top, #fefcea, #9e5975);*/
-    background: linear-gradient(to top, #8f7c98, #2e2460);
+    /*background: linear-gradient(to top, #8f7c98, #2e2460);*/
+    background: linear-gradient(to top,#ffffff, #250738);
+    /*background: linear-gradient(to top,#ffffff, #3e156b);*/
 }
 /* _______________________ Шапка Сайта _____________________________*/
 
@@ -115,6 +117,9 @@ body{
 .logo img{
 	height: 100%;
 	width: 100%;
+}
+.logo:hover{
+	cursor: pointer;
 }
 
 .navbar{
